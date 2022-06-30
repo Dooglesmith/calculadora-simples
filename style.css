@@ -1,0 +1,68 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to left top, #bc09ed, #791e92);
+}
+
+.calc {
+  width: 250px;
+  height: 400px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 10px solid #350c41;
+  position: relative;
+  top: 50%; /* Distancia entre o elemento e o topo da página, 50% vai pegar a metade do tamanho da página e puxar o elemento aquela distancia pra baixo */
+  left: 50%; /* A posição default do elemento é 0px left */
+  transform: translate(-50%, -50%);
+  background-color: #161616;
+}
+
+.screen {
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 22px;
+  background: none;
+  border-radius: 4px;
+  border: 5px solid rgb(87, 87, 87);
+  box-sizing: border-box;
+  color: white;
+  background-color: rgb(5, 81, 5);
+}
+
+.bn {
+  width: 55px;
+  height: 55px;
+  margin: 2px;
+  padding: 9px;
+  background: none;
+  border-radius: 4px;
+  border: 5px solid rgb(74, 74, 74);
+  box-sizing: border-box;
+  color: white;
+  font-size: 20px;
+  outline: none;
+  transition: .5s;
+  cursor: pointer;
+  transition: focus, .3s;
+}
+
+.bn:hover {
+  transform: scale(1.08);
+  transition: .5s;
+  background-color: #bc09ed;
+}
+
+/*.bn:focus {
+  background-color: #791e92;
+} */
+
+.screen:focus {
+  outline: none;
+}
